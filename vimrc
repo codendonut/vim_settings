@@ -64,7 +64,7 @@ Plug 'jackielii/vim-gomod', { 'for' : ['gomod', 'gosum'] }
 Plug 'OmniSharp/omnisharp-vim'
 
 " {{{2 AI
-Plug 'Exafunction/codeium.vim', { 'branch': 'main', 'on': 'Codeium' }
+Plug 'gergap/vim-ollama'
 
 " {{{2 navigation plugins
 Plug 'vim-airline/vim-airline'
@@ -352,11 +352,6 @@ let g:OmniSharp_highlight_groups = {
 
 " {{{1 Vimspector
 let g:vimspector_enable_mappings = 'HUMAN'
-
-" {{{1 Codeium
-let g:codeium_disable_bindings = 1
-imap <script><silent><nowait><expr> <C-g> codeium#Accept()
-let g:codeium_no_map_tab = 1
 
 " {{{1 Generic Tags
 " FZF / tag completion

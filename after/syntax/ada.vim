@@ -33,7 +33,7 @@ hi def link afterAdaSimpleDef Type
 syn match afterAdaSimpleDef /\(:\s\+\(\w\+\.\)\+\)\@<=\w\+\ze;/ contains=adaOperator
 hi def link afterAdaSimpleDef Type
 
-" matches : (zzzz.)+ xxxx :=
+" matches : constaint? (zzzz.)+ xxxx :=
 syn match afterAdaSimpleDef /\(:\s\+\(constant\s\+\)\=\(\w\+\.\)\+\)\@<=\w\+ \ze\(:=\)/ contains=adaOperator
 hi def link afterAdaSimpleDef Type
 
