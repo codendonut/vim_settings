@@ -3,11 +3,11 @@ let g:ollama_use_venv = 1
 " Ollama base URL
 let g:ollama_host = 'http://localhost:11434'
 " tab completion model
-let g:ollama_model = 'starcoder2:latest'
+let g:ollama_model = 'starcoder2:3b'
 " number of context lines to use for code completion
 "let g:ollama_context_lines = 10
 " debounce time to wait before triggering a completion
-"let g:ollama_debounce_time = 300
+let g:ollama_debounce_time = 100
 " If you want to enable completion for a limited set of
 " filetypes only, list them here.
 "let g:ollama_completion_allowlist_filetype = []
@@ -16,14 +16,15 @@ let g:ollama_model = 'starcoder2:latest'
 "let g:ollama_completion_denylist_filetype = []
 
 " chat model
-let g:ollama_chat_model = 'qwen3.5:latest'
+let g:ollama_chat_model = 'llama3.1:8b'
 " override chat system prompt
 "let g:ollama_chat_systemprompt = 'Give funny answers.'
+let g:ollama_chat_timeout = 600
 
 " edit model
-let g:ollama_edit_model = 'qwen3-coder-next:cloud'
+let g:ollama_edit_model = 'qwen2.5-coder:7b'
 " when disabled, LLM changs are applied directly. Useful when tracking changes via Git.
-"let g:ollama_use_inline_diff = 0
+let g:ollama_use_inline_diff = 1
 
 " debug settings
 let g:ollama_debug = 4
