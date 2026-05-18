@@ -63,8 +63,7 @@ Plug 'vito-c/jq.vim', { 'for' : 'jq' }
 Plug 'jackielii/vim-gomod', { 'for' : ['gomod', 'gosum'] }
 Plug 'OmniSharp/omnisharp-vim'
 
-" {{{2 AI
-Plug 'gergap/vim-ollama'
+
 
 " {{{2 navigation plugins
 Plug 'vim-airline/vim-airline'
